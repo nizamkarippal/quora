@@ -1,0 +1,60 @@
+:root{
+    --main-color:#b92b27;
+    --main-color-dark:#941e1a;
+}
+
+
+.text-main-color{
+    color: var(--main-color);
+}
+/* .navbar-brand{
+    padding-bottom: 4px;   */
+
+.nav-link i{
+    padding-bottom: 2px;
+}
+
+.nav-link i:hover{
+    color:var(--main-color-dark);
+    border-bottom:3px solid   var(--main-color-dark);
+   
+}
+.fs-7{
+    font-size: 0.8rem;
+}
+.profile{
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+}
+/* --------------left-list--------- */
+.bg-second-color{
+   background-color: rgb(233,233, 233); 
+}
+
+#left-list a{
+   text-decoration: none;
+   color: gray;
+ 
+}
+#left-list p a:hover{
+    text-decoration: underline;}
+.left-img{
+width:25px ;
+height: 25px;
+}
+.hover-dark:hover{
+    background-color: rgb(233,233, 233);
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* -------------mainbody---------- */
+.post-profile{
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+}
+.right-side-btn:hover{
+    background-color: gray;
+    border-radius: 50%;
+}

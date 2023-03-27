@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QUORA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light border-bottom p-0 fixed-top"
+    style="min-height: 56px; z-index: 100; background:white;">
+    <div class="container">
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand " href="#">
+        <span class="text-main-color fw-bold fs-3  ps-1 ps-xxl-4">Quora</span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-nav me-auto mb-2 mb-md-0  mb-lg-0 text-start">
+          <li class="nav-item fs-4 ">
+            <a class="nav-link" href="#"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="nav-item fs-4">
+            <a class="nav-link" href="#"><i class="fas fa-message"></i></a>
+          </li>
+          <li class="nav-item fs-4">
+            <a class="nav-link" href="#"><i class="fas fa-pen"></i></a>
+          </li>
+          <li class="nav-item fs-4">
+            <a class="nav-link " href="#"><i class="fa-solid fa-people-group"></i></a>
+          </li>
+          <li class="nav-item fs-4">
+            <a class="nav-link" href="#"><i class="fas fa-solid fa-bell"></i>
+              <span class="span-notification position-relative me-auto d-md-none d-lg-inline ">
+                <span
+                  class="position-absolute top--50 start-50  translate-end badge rounded-circle fs-7 fs-md-5 p-1 bg-danger">
+                  50+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form
+        class="d-md-flex d-lg-flex d-xl-flex d-xxl-flex ms-md-3 d-none  d-md-inline-block d-lg-inline-block d-xl-inline-block d-xxl-inline-block">
+        <div class="d-flex  align-items-center border border-dark rounded-pill ps-auto justify-content-start">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" class="form-control  search-icon border-0 outline-none rounded-pill"
+            placeholder="Search Quora">
+        </div>
+        <button class="btn btn-light rouned-pill border-1 fs-6 d-md-none d-lg-inline text-muted">Try Quora+</button>
+      </form>
+
+
+      <ul class="navbar-nav px-2 ">
+        <li class="nav-item d-none  d-md-inline-block d-lg-inline-block d-xl-inline-block">
+          <a class="nav-link" href="#">
+            <img class="profile rounded-circle" src="img\profile.jpg">
+          </a>
+        </li>
+        <li class="nav-item d-none  d-md-inline-block d-lg-inline-block d-xl-inline-block">
+          <a class="nav-link fs-3 " href="#">
+            <i class="fas fa-globe"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="dropdown d-none  d-md-inline-block d-lg-inline-block d-xl-inline-block">
+        <button class="btn btn-danger p-0 px-1 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Add Questio
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item p-0 px-2" href="#"><i class="fa-solid fa-pen pe-3"></i>Create Post</a></li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- --------nav end-------------------------------- -->
+  <div class="bg-light mt-5 pt-4">
+    <div class="container mb-5">
+      <div class="row">
+        <div id="left-list"
+          class="col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-lg-flex d-md-flex d-xl-flex d-xxl-flex flex-column d-none  d-md-inline d-lg-inline d-xl-inline-block"
+          style="position: sticky; top:56px;">
+          <a href="#" class="bg-second-color ps-1 mb-2">
+            +
+            <span class="text-primary">Create Space</span> 
+          </a>
+          <a class="mb-1" href="#"><img class="left-img rounded-pill" src="img\left-img1.jpg">
+            <span>Movies</span></a>
+          <a class="mb-1" href="#"><img class="left-img rounded-pill" src="img\left-img2.jpg">
+            <span>History</span></a>
+          <a class="mb-1" href="#"><img class="left-img rounded-pill" src="img\left-img3.jpg">
+            <span>Business</span></a>
+          <a class="mb-1" href="#"><img class="left-img rounded-pill" src="img\left-img4.jpg">
+            <span>Books</span></a>
+          <a class="mb-1" href="#"><img class="left-img rounded-pill" src="img\left-img5.jpg">
+            <span class="fs-md-6">Tech</span></a>
+          <hr>
+          <p class="text-secondry p-0">About: <a href="#">Careers.</a></p>
+          <p class="text-secondry p-0">Terms: <a href="#">Privacy.</a></p>
+          <p class="text-secondry p-0">Acceptable: <a href="#">Use.</a></p>
+          <p class="text-secondry p-0">Businesses: <a href="#">Press.</a></p>
+          <p class="text-secondry p-0"> <a href="#">Your Ad Choices.</a></p>
+          <p class="text-secondry p-0"><a href="#">Grieveance Officer</a></p>
+
+        </div>
+        <!-- -------------------sidebody end------------ -->
+        <div class="col-md-6 col-lg-7 col-xl-7 col-xxl-7 col-12">
+          <div class="bg-white border-gray">
+
+
+            <div class="row">
+              <div class="col">
+                <img class="profile rounded-circle " src="img\profile.jpg">
+                <input class="w-80 w-md-75 border-light text-secondry bg-light rounded-pill ps-0 ps-md-2 px-lg-5 text-start" type="button"
+                  value="What You Want To Ask  or Share?">
+              </div>
+            </div>
+            <div class="row text-gray-darker pb-2 px-4">
+              <div class="col text-center border-end hover-dark">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Ask</span>
+              </div>
+              <div class="col text-center border-end hover-dark">
+
+                <span>Answer</span>
+              </div>
+              <div class="col text-center  hover-dark">
+                <i class="fa-sharp fa-solid fa-pen"></i>
+                <span>Post</span>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------mainbody-------------------- -->
+
+          <div class="post bg-white mt-2 border-gray">
+            <div class="pt-2 d-flex justify-content-between">
+              <div class="d-flex">
+                <img class="post-profile rounded-circle" src="img\post-img1.jpg">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold fs-5">Hector Quintanilla. <span class="text-primary">Follow</span> </span>
+                  <span class="text-gray-darker">Writer at seanjkernan.substack.com , Dec 15</span>
+                </div>
+              </div>
+              <div class="p-0 text-gray-darker">
+                <button class="btn rounded-circle hover-dark p-0 pe-1">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="post-body pt-2 ps-3">
+              <div class="post-title fw-bold">
+                <a class="text-decoration-none text-dark" href="#">
+                  How do you think about animals in terms of their level of intelligence?</a>
+            </div>
+
+              <div class="post-text pt-1">
+                Animals are intelligent in the ways that they need to be. They may not be able to do math or write
+                essays, but they are wired to navigate their own life’s problems. For example, some birds create a home
+                with a fake room to confuse a predator: The snake will see the room and realize his smell must have…
+                <span><a href="#">(more)</a></span>
+              </div>
+
+            </div>
+            <div class="post-image pt-2">
+              <img class="img-fluid" src="img\post-img2.jpg">
+            </div>
+            <div class="post-footer d-flex justify-content-around pt-2">
+              <div class="btn-group">
+                <button type="button" class="btn bg-second-color p-0 ">
+                  <i class=" text-primary fa-solid fa-arrow-up"></i>
+                  Upvote . 13k
+                </button>
+                <button type="button" class="btn bg-second-color p-0">
+                  <i class="fa-solid fa-arrow-down"></i>
+                </button>
+              </div>
+
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fas fa-arrows-rotate"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Comment</a></li>
+                </ul>
+              </div>
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fa-brands fa-rocketchat"></i>45</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chat</a></li>
+                </ul>
+              </div>
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fa-solid fa-ellipsis"></i></button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="post bg-white mt-2 border-gray">
+            <div class="pt-2 d-flex justify-content-between">
+              <div class="d-flex">
+                <img class="post-profile rounded-circle" src="img\post-face.jpg">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold fs-5">Hector Quintanilla. <span class="text-primary">Follow</span> </span>
+                  <span class="text-gray-darker fs-6">Founder at BeBusinessSmart.com (2019–present)· Updated 2y</span>
+                </div>
+              </div>
+              <div class="p-2 text-gray-darker">
+                <button class="btn rounded-circle hover-dark p-0 p-e-1">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="post-body pt-2 ps-3">
+              <div class="post-title fw-bold">
+                <a class="text-decoration-none text-dark" href="#">
+                  What makes an entrepreneur's mindset quite different from the rest?</a>
+
+              </div>
+              <div class="post-text pt-1">
+                It shaped me to a person. Back then,I was glued to my phone all the time.I wasn't playing neither
+                outside or in my home.The only way I could entertain myself is just binge watch web series and talk with
+                friends. But something led me to this habit of reading books.I'm still puzzled,how did it all start…
+                …
+                <span><a href="#">(more)</a></span>
+              </div>
+
+            </div>
+            <div class="post-image pt-2">
+              <img class="img-fluid" src="img\post-img5.jpg">
+            </div>
+            <div class="post-footer d-flex justify-content-around pt-2">
+              <div class="btn-group">
+                <button type="button" class="btn bg-second-color p-0">
+                  <i class=" text-primary fa-solid fa-arrow-up"></i>
+                  Upvote . 103k
+                </button>
+                <button type="button" class="btn bg-second-color p-0">
+                  <i class="fa-solid fa-arrow-down"></i>
+                </button>
+              </div>
+
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fas fa-arrows-rotate"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Comment</a></li>
+                </ul>
+              </div>
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fa-brands fa-rocketchat"></i>45</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chat</a></li>
+                </ul>
+              </div>
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fa-solid fa-ellipsis"></i></button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="post bg-white mt-2 border-gray">
+            <div class="pt-2 d-flex justify-content-between">
+              <div class="d-flex">
+                <img class="post-profile rounded-circle" src="img\post-face1.jpg">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold fs-5">
+                    Rushikesh Kirtikar. <span class="text-primary">Follow</span> </span>
+                  <span class="text-gray-darker fs-6">Have worked for bringing innovations in educatio · Oct 11</span>
+                </div>
+              </div>
+              <div class="p-2 text-gray-darker">
+                <button class="btn rounded-circle hover-dark p-0 p-1">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="post-body pt-2 ps-3">
+              <div class="post-title fw-bold">
+                <a class="text-decoration-none text-dark" href="#">
+                  Why do so many startups fail?</a>
+
+              </div>
+              <div class="post-text pt-1">
+                Back in 2012, I was participating in a competition of young startups and entrepreneurs who were
+                presenting their ideas before a panel. There was this very enthusiastic and smart guy amongst us who
+                seemed very excited and confident about his product. He had made a shoe which could charge your mobile
+                battery.…
+                <span><a href="#">(more)</a></span>
+              </div>
+
+            </div>
+            <div class="post-image pt-2">
+              <img class="img-fluid" src="img\post-img3.jpg">
+            </div>
+            <div class="post-footer d-flex justify-content-around pt-2">
+              <div class="btn-group">
+                <button type="button" class="btn bg-second-color p-0">
+                  <i class=" text-primary fa-solid fa-arrow-up"></i>
+                  Upvote . 45k
+                </button>
+                <button type="button" class="btn bg-second-color p-0">
+                  <i class="fa-solid fa-arrow-down"></i>
+                </button>
+              </div>
+
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fas fa-arrows-rotate"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Comment</a></li>
+                </ul>
+              </div>
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fa-brands fa-rocketchat"></i>45</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chat</a></li>
+                </ul>
+              </div>
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fa-solid fa-ellipsis"></i></button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="post bg-white mt-2 border-gray">
+            <div class="pt-2 d-flex justify-content-between">
+              <div class="d-flex">
+                <img class="post-profile rounded-circle" src="img\post-face2.jpg">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold fs-5">Hector Quintanilla. <span class="text-primary">Follow</span> </span>
+                  <span class="text-gray-darker fs-6">Writer at seanjkernan.substack.com , Mar 15</span>
+                </div>
+              </div>
+              <div class="p-2 text-gray-darker">
+                <button class="btn rounded-circle hover-dark p-0 p-1">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="post-body pt-2 ps-3">
+              <div class="post-title fw-bold">
+                <a class="text-decoration-none text-dark" href="#">
+                  How does the Swedish army compare to other armies around the world?</a>
+
+              </div>
+              <div class="post-text pt-1">
+                The Swedish Army are small, but very advanced, however, now as a new member of the NATO alliance, this
+                changes things, are they now part of the worlds largest and most powerful military alliance.…
+                <span><a href="#">(more)</a></span>
+              </div>
+
+            </div>
+            <div class="post-image pt-2">
+              <img class="img-fluid" src="img\post-img4.jpg">
+            </div>
+            <div class="post-footer d-flex justify-content-around pt-2">
+              <div class="btn-group">
+                <button type="button" class="btn bg-second-color p-0 ">
+                  <i class=" text-primary fa-solid fa-arrow-up"></i>
+                  Upvote . 4k
+                </button>
+                <button type="button" class="btn bg-second-color p-0">
+                  <i class="fa-solid fa-arrow-down"></i>
+                </button>
+              </div>
+
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fas fa-arrows-rotate"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Comment</a></li>
+                </ul>
+              </div>
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fa-brands fa-rocketchat"></i>45</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chat</a></li>
+                </ul>
+              </div>
+              <div class="right-side-btn">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"><i
+                    class="fa-solid fa-ellipsis"></i></button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- ---------------------------------left-side------------------------- -->
+        <div class="col-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3 d-none  d-md-inline  d-lg-inline d-xl-inline d-xxl-inline position-sticky top-56px">
+
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="">
+                <img src="img\post-img1.jpg" style="width: 40px;height: 40px;border-radius: 5px;">
+              </div>
+              <div class="ps-2 lh-1">
+                <div class="fw-bold"><small> <a class="text-decoration-none" href="#">Advance AI</a> </small></div>
+
+                <div class="text-secondry fw-light"><small>A space for AI and science.....</small></div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="">
+                <img src="img\post-img1.jpg" style="width: 40px;height: 40px;border-radius: 5px;">
+              </div>
+              <div class="ps-2 lh-1">
+                <div class="fw-bold"><small> <a class="text-decoration-none" href="#">Advance AI</a> </small></div>
+
+                <div class="text-secondry fw-light"><small>A space for AI and science.....</small></div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="">
+                <img src="img\post-img1.jpg" style="width: 40px;height: 40px;border-radius: 5px;">
+              </div>
+              <div class="ps-2 lh-1">
+                <div class="fw-bold"><small> <a class="text-decoration-none" href="#">Advance AI</a> </small></div>
+
+                <div class="text-secondry fw-light"><small>A space for AI and science.....</small></div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="">
+                <img src="img\post-img1.jpg" style="width: 40px;height: 40px;border-radius: 5px;">
+              </div>
+              <div class="ps-2 lh-1">
+                <div class="fw-bold"><small> <a class="text-decoration-none" href="#">Advance AI</a> </small></div>
+
+                <div class="text-secondry fw-light"><small>A space for AI and science.....</small></div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="">
+                <img src="img\post-img1.jpg" style="width: 40px;height: 40px;border-radius: 5px;">
+              </div>
+              <div class="ps-2 lh-1">
+                <div class="fw-bold"><small> <a class="text-decoration-none" href="#">Advance AI</a> </small></div>
+
+                <div class="text-secondry fw-light"><small>A space for AI and science.....</small></div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
